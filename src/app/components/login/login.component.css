@@ -1,0 +1,55 @@
+img{
+  width: 15%;
+  height: 15%;
+}
+.presentation{
+  text-align: center;
+  margin: 30px 20px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+mat-form-field{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  background-color: #6DCCBB;
+
+  margin-bottom: 20px;
+
+  background-size: 200px 100px;
+}
+
+mat-label{
+  margin-left: 5px;
+}
+
+button{
+  background-color: #82FFE8;
+}
+
+p{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+

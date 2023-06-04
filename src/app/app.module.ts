@@ -7,12 +7,16 @@ import { NavLandingComponent } from './components/nav-landing/nav-landing.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './components/shared/angular-material/angular-material.module';
 import { LandingComponent } from './components/landing/landing.component';
+import { LoginComponent } from './components/login/login.component';
+import { OpcionesComponent } from './components/opciones/opciones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavLandingComponent,
-    LandingComponent
+    LandingComponent,
+    LoginComponent,
+    OpcionesComponent
   ],
   imports: [
     BrowserModule,
