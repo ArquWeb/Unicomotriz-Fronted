@@ -1,0 +1,39 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar{
+  background-color: #00FFD1;
+}
+
+span{
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 1em;
+}
+
+li {
+  padding: 20px;
+  margin:0px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+}
+
+.options{
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
