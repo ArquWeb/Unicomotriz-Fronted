@@ -1,0 +1,38 @@
+.presentation{
+  text-align: center;
+  margin: 90px 40px;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: bold;
+
+}
+
+
+mat-card::ng-deep.mat-card-header-text {
+  width: 50%;
+}
+
+mat-card{
+  width: 12%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #00FFD1;
+  align-items: center;
+  text-align: center;
+}
+
+.opciones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.card-image{
+  width: 600px;
+  height: 200px;
+  align-items: center;
+  margin-right: 17px;
+}

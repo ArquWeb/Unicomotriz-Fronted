@@ -4,11 +4,13 @@ import { NavLandingComponent } from './components/nav-landing/nav-landing.compon
 import { LoginComponent } from './components/login/login.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { OpcionesComponent } from './components/opciones/opciones.component';
+import { PersonalizacionComponent } from './components/personalizacion/personalizacion.component';
 
 const routes: Routes = [
   { path: "", component: LandingComponent },
   { path: "login", component: LoginComponent },
   { path: "opciones", component: OpcionesComponent },
+  { path: "personalizacion", component: PersonalizacionComponent },
 
 ];
 

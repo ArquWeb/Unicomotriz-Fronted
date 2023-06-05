@@ -9,6 +9,7 @@ import { AngularMaterialModule } from './components/shared/angular-material/angu
 import { LandingComponent } from './components/landing/landing.component';
 import { LoginComponent } from './components/login/login.component';
 import { OpcionesComponent } from './components/opciones/opciones.component';
+import { PersonalizacionComponent } from './components/personalizacion/personalizacion.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OpcionesComponent } from './components/opciones/opciones.component';
     NavLandingComponent,
     LandingComponent,
     LoginComponent,
-    OpcionesComponent
+    OpcionesComponent,
+    PersonalizacionComponent
   ],
   imports: [
     BrowserModule,
