@@ -17,9 +17,27 @@ mat-card::ng-deep.mat-card-header-text {
 }
 
 mat-card{
-  width: 10%;
+  width: 12%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #00FFD1;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.opciones{
   display: flex;
-  flex-direction:;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-image{
+  width: 600px;
+  height: 200px;
+  align-items: center;
+  margin-right: 17px;
 }
 
 
