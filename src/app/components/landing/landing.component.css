@@ -440,3 +440,8 @@ img{
   margin: auto;
   margin-bottom: 20px;
 }
+
+.img-customer{
+  height: 40%;
+  width: 70%;
+}
