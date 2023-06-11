@@ -1,0 +1,14 @@
+{
+  "clientes":[
+    {
+      "id": 1,
+      "nombre": "jorge",
+      "apellido": "apaza",
+      "email": "jorge@gmail.com",
+      "modeloVehiculo": "toyota",
+      "direccion": "calle 1",
+      "ciudad": "Lima",
+      "password": "123"
+    }
+  ]
+}

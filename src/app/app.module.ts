@@ -12,6 +12,9 @@ import { OpcionesComponent } from './components/opciones/opciones.component';
 import { PersonalizacionComponent } from './components/personalizacion/personalizacion.component';
 import { MantenimientoComponent } from './components/mantenimiento/mantenimiento.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,17 @@ import { TiendaComponent } from './components/tienda/tienda.component';
     OpcionesComponent,
     PersonalizacionComponent,
     MantenimientoComponent,
-    TiendaComponent
+    TiendaComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

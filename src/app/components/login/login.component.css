@@ -26,7 +26,7 @@ mat-form-field{
   flex-direction: column;
   margin: auto;
 
-  background-color: #6DCCBB;
+
 
   margin-bottom: 20px;
 
@@ -39,14 +39,21 @@ mat-label{
 
 button{
   background-color: #82FFE8;
+  margin-bottom: 10px;
 }
 
 p{
   margin-top: 10px;
 }
 
+.opcion{
+  display:flex;
+  flex-direction: row;
+}
 
-
+a{
+  margin-right: 10px;
+}
 
 
 
