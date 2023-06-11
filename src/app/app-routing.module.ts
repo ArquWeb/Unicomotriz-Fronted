@@ -5,17 +5,20 @@ import { LoginComponent } from './components/login/login.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { OpcionesComponent } from './components/opciones/opciones.component';
 import { PersonalizacionComponent } from './components/personalizacion/personalizacion.component';
+import { MantenimientoComponent } from './components/mantenimiento/mantenimiento.component';
+import { TiendaComponent } from './components/tienda/tienda.component';
 
 const routes: Routes = [
-  { path: "", component: LandingComponent },
-  { path: "login", component: LoginComponent },
-  { path: "opciones", component: OpcionesComponent },
-  { path: "personalizacion", component: PersonalizacionComponent },
-
+  { path: '', component: LandingComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'opciones', component: OpcionesComponent },
+  { path: 'personalizacion', component: PersonalizacionComponent },
+  { path: 'matenimiento', component: MantenimientoComponent },
+  { path: 'tienda', component: TiendaComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

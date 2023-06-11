@@ -4,6 +4,22 @@
   padding: 16px 75px;
 }
 
+.tienda-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.tienda-input input {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  min-height: 40px;
+  min-width: 450px;
+}
+
 .presentation h1 {
   flex: 1;
   text-align: center;
@@ -36,13 +52,15 @@ mat-card {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .opciones-item {
   min-width: 290px;
   min-height: 300px;
-  background: #d9d9d9;
+  max-width: 290px;
+  max-height: 300px;
+  background: #00ffd1;
   border-radius: 25px;
   position: relative;
   text-align: center;
@@ -62,15 +80,14 @@ mat-card {
 .item-img-container img {
   object-fit: contain;
   width: 100%;
+  border-radius: 50%;
 }
 
 .opciones-item h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 47px;
-
+  font-size: 30px;
   color: #000000;
 }
 
@@ -79,4 +96,15 @@ mat-card {
   height: 200px;
   align-items: center;
   margin-right: 17px;
+}
+
+.tienda-max-vendido {
+  margin-top: 1rem;
+  font-family: "Roboto";
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

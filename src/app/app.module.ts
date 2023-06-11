@@ -10,6 +10,8 @@ import { LandingComponent } from './components/landing/landing.component';
 import { LoginComponent } from './components/login/login.component';
 import { OpcionesComponent } from './components/opciones/opciones.component';
 import { PersonalizacionComponent } from './components/personalizacion/personalizacion.component';
+import { MantenimientoComponent } from './components/mantenimiento/mantenimiento.component';
+import { TiendaComponent } from './components/tienda/tienda.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PersonalizacionComponent } from './components/personalizacion/personali
     LandingComponent,
     LoginComponent,
     OpcionesComponent,
-    PersonalizacionComponent
+    PersonalizacionComponent,
+    MantenimientoComponent,
+    TiendaComponent
   ],
   imports: [
     BrowserModule,
