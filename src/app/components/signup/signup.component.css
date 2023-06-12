@@ -1,0 +1,29 @@
+button{
+  background-color: red;
+  color:white;
+}
+
+h2{
+  text-align: center;
+  margin-top: 10px;
+}
+.mat-form-field{
+  width: 20%;
+  font-size: 15px;
+  margin: auto;
+
+}
+
+input{
+  margin: 0px 5px;
+}
+
+button{
+  margin-bottom: 15px;
+  margin: 10px 10px;
+}
+
+.form{
+  align-items: center;
+  text-align: center;
+}

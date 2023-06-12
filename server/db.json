@@ -1,5 +1,5 @@
 {
-  "clientes":[
+  "clientes": [
     {
       "id": 1,
       "nombre": "jorge",
@@ -9,6 +9,16 @@
       "direccion": "calle 1",
       "ciudad": "Lima",
       "password": "123"
+    },
+    {
+      "id": 999,
+      "nombre": "pepe",
+      "apellido": "Ambrosio",
+      "email": "pepe@gmail.com",
+      "modeloVehiculo": "Nissan",
+      "direccion": "calle 2",
+      "ciudad": "Lima",
+      "password": "1234"
     }
   ]
 }

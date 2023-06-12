@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { HtmlParser } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Cliente } from 'src/app/models/cliente';
 
@@ -22,4 +23,5 @@ export class ClienteService {
   addCliente(cliente:Cliente){
     return this.http.post<Cliente>('http://localhost:3000/clientes', cliente)
   }
+
 }
