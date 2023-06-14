@@ -15,6 +15,8 @@ import { TiendaComponent } from './components/tienda/tienda.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './components/signup/signup.component';
+import { StoreComponent } from './components/store/store.component';
+import { NewEditProductoComponent } from './components/new-edit-producto/new-edit-producto.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SignupComponent } from './components/signup/signup.component';
     PersonalizacionComponent,
     MantenimientoComponent,
     TiendaComponent,
-    SignupComponent
+    SignupComponent,
+    StoreComponent,
+    NewEditProductoComponent
   ],
   imports: [
     BrowserModule,

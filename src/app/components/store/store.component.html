@@ -1,0 +1,15 @@
+<div class="presentation">
+  <h1>Tienda</h1>
+  <img src="../../../assets/images/user-default.png" alt="username" />
+</div>
+
+<div *ngFor="let item of productos; let i=index" class="lista">
+    <div class="opciones-item">
+      <div class="item-img-container">
+        <img src="{{item.imagen}}" alt="foco-halogeno" />
+      </div>
+      <h2>{{item.nombre}}</h2>
+    </div>
+
+</div>
+

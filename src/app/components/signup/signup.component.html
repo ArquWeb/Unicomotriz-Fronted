@@ -36,18 +36,6 @@
     <span class="text-danger"> Ingrese un email válido</span>
   </div>
 
-
-  <mat-form-field appearance="standard" class="w-50 mb-4">
-    <mat-label class="font-lighter">Modelo Vehículo</mat-label>
-    <input matInput formControlName="modeloVehiculo" placeholder="Modelo Vehículo" />
-  </mat-form-field>
-  <br />
-
-  <div *ngIf="(myForm.get('modeloVehiculo')?.hasError('required') && myForm.get('modeloVehiculo')?.touched)">
-    <span class="text-danger">*Campo obligatorio</span>
-  </div>
-
-
   <mat-form-field appearance="standard" class="w-50 mb-4">
     <mat-label class="font-lighter">Direccion</mat-label>
     <input matInput formControlName="direccion" placeholder="Direccion" />
@@ -70,6 +58,36 @@
   </div>
 
   <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Marca</mat-label>
+    <input matInput formControlName="marca" placeholder="Marca" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Modelo de Vehiculo</mat-label>
+    <input matInput formControlName="modeloVehiculo" placeholder="Modelo de Vehiculo" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Placa</mat-label>
+    <input matInput formControlName="placa" placeholder="Placa" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Soat</mat-label>
+    <input type="date" matInput formControlName="soat" placeholder="Soat" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Revision Tecnica</mat-label>
+    <input type="date" matInput formControlName="revisionTecnica" placeholder="Revision Tecnica" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
     <mat-label class="font-lighter">Password</mat-label>
     <input matInput formControlName="password" placeholder="Password" type="password"/>
   </mat-form-field>
@@ -80,7 +98,7 @@
   </div>
 
   <div class="text-end w-50">
-    <button mat-raised-button id="btn-ingresar"
+    <button mat-raised-button id="btn-cancelar"
       class="font-lighter w-50" routerLink="/login">
       Cancelar</button>
     <button mat-raised-button id="btn-ingresar" mat-raised-button [disabled]="myForm.invalid"

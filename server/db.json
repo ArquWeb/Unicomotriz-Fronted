@@ -5,20 +5,106 @@
       "nombre": "jorge",
       "apellido": "apaza",
       "email": "jorge@gmail.com",
-      "modeloVehiculo": "toyota",
       "direccion": "calle 1",
       "ciudad": "Lima",
-      "password": "123"
+      "password": "123",
+      "vehiculo": {
+        "id": 6,
+        "marca": "Toyota",
+        "modeloVehiculo": "toyota",
+        "placa": "123-ABC",
+        "soat": "10/06/2023",
+        "revisionTecnica": "10/06/2023"
+      }
     },
     {
       "id": 999,
       "nombre": "pepe",
       "apellido": "Ambrosio",
       "email": "pepe@gmail.com",
-      "modeloVehiculo": "Nissan",
       "direccion": "calle 2",
       "ciudad": "Lima",
-      "password": "1234"
+      "password": "1234",
+      "vehiculo": {
+        "id": 5,
+        "marca": "Toyota",
+        "modeloVehiculo": "toyota",
+        "placa": "123-ABC",
+        "soat": "10/06/2023",
+        "revisionTecnica": "10/06/2023"
+      }
+    },
+    {
+      "id": 60,
+      "nombre": "alfonso",
+      "apellido": "ramirez",
+      "email": "alfonso@gmail.com",
+      "direccion": "Huaycan Ate",
+      "ciudad": "Ate",
+      "password": "123",
+      "vehiculo": {
+        "id": 50,
+        "marca": "Toyota",
+        "modeloVehiculo": "Toyota",
+        "placa": "123-ABC",
+        "soat": "2023-06-04",
+        "revisionTecnica": "2023-06-01"
+      }
+    }
+  ],
+  "mecanicos": [
+    {
+      "id": 1,
+      "nombre": "juan",
+      "usuario": "juan",
+      "password": "12345",
+      "direccion": "calle 3",
+      "email": "juan@gmail.com"
+    },
+    {
+      "id": 2,
+      "nombre": "luis",
+      "usuario": "luis",
+      "password": "12345",
+      "direccion": "calle 4",
+      "email": "luis@gmail.com"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
     }
   ]
 }
