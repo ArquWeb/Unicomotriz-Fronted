@@ -97,6 +97,13 @@ mat-card {
 }
 
 .lista{
-  grid-row:auto;
-  grid-column: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-right: 40px;
+
+}
+
+.item{
+  margin: 50px 50px;
 }

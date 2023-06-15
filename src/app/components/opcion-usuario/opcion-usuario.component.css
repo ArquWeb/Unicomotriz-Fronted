@@ -1,0 +1,52 @@
+img{
+  width: 15%;
+  height: 15%;
+}
+.presentation{
+  text-align: center;
+  margin: 30px 20px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+
+mat-card::ng-deep.mat-card-header-text {
+  width: 50%;
+}
+
+mat-card{
+  width: 12%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #00FFD1;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.opciones{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+button{
+  margin: auto;
+  background-color: #00FFD1;
+  font-size: 30px;
+  border-color: #00FFD1;
+}
+
+.card-image{
+  width: 600px;
+  height: 200px;
+  align-items: center;
+  margin-right: 17px;
+}

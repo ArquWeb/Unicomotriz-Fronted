@@ -1,0 +1,40 @@
+<app-nav-mecanico></app-nav-mecanico>
+
+<form [formGroup]="myForm" class="form">
+  <h2>Editar Producto</h2>
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Nombre</mat-label>
+    <input matInput formControlName="nombre" placeholder="Nombre" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Descripcion</mat-label>
+    <input matInput formControlName="descripcion" placeholder="Descripcion" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-0">
+    <mat-label class="font-lighter">Precio</mat-label>
+    <input matInput formControlName="precio" placeholder="Precio" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Imagen</mat-label>
+    <input matInput formControlName="imagen" placeholder="Imagen" />
+  </mat-form-field>
+  <br />
+
+  <div class="text-end w-50">
+    <button mat-raised-button id="btn-cancelar"
+      class="font-lighter w-50" routerLink="/listaProducto">
+      Cancelar</button>
+    <button mat-raised-button id="btn-ingresar" mat-raised-button [disabled]="myForm.invalid"
+      class="font-lighter w-50" (click)="addProducto()">
+      Listo
+    </button>
+  </div>
+
+</form>

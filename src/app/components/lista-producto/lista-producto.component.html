@@ -1,0 +1,58 @@
+<app-nav-mecanico></app-nav-mecanico>
+
+<h2>Lista de Productos</h2>
+
+<button mat-raised-button color="primary" routerLink="/addProducto" class="me-4">Añadir</button>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- Nombre Column -->
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+
+    <!-- Descripcion Column -->
+    <ng-container matColumnDef="descripcion">
+      <th mat-header-cell *matHeaderCellDef> Descripcion</th>
+      <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+    </ng-container>
+
+    <!-- Precio Column -->
+    <ng-container matColumnDef="precio">
+      <th mat-header-cell *matHeaderCellDef> Precio </th>
+      <td mat-cell *matCellDef="let element"> {{element.precio}} </td>
+    </ng-container>
+
+    <!-- Imagen Column -->
+    <ng-container matColumnDef="imagen">
+      <th mat-header-cell *matHeaderCellDef> Imagen </th>
+      <td mat-cell *matCellDef="let element"> <img src="{{element.imagen}}" alt="img" class="img-table"> </td>
+    </ng-container>
+
+    <!-- Action1 Column -->
+    <ng-container matColumnDef="action1">
+      <th mat-header-cell *matHeaderCellDef> Action1 </th>
+      <td mat-cell *matCellDef="let element"> <button  mat-flat-button routerLink="/producto/{{element.id}}" >Editar </button > </td>
+    </ng-container>
+
+    <!-- Action2 Column -->
+    <ng-container matColumnDef="action2">
+      <th mat-header-cell *matHeaderCellDef> Action2</th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-flat-button (click)="deleteProducto(element.id)">
+        <mat-icon aria-hidden="false" fontIcon="delete"></mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10]"
+      showFirstLastButtons
+      aria-label="Select page of periodic elements">
+    </mat-paginator>
+</div>

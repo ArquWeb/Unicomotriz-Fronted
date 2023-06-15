@@ -16,7 +16,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './components/signup/signup.component';
 import { StoreComponent } from './components/store/store.component';
-import { NewEditProductoComponent } from './components/new-edit-producto/new-edit-producto.component';
+import { ListaProductoComponent } from './components/lista-producto/lista-producto.component';
+import { NavMecanicoComponent } from './components/nav-mecanico/nav-mecanico.component';
+import { NavClienteComponent } from './components/nav-cliente/nav-cliente.component';
+import { OpcionUsuarioComponent } from './components/opcion-usuario/opcion-usuario.component';
+import { EditProductoComponent } from './components/edit-producto/edit-producto.component';
+import { AddProductoComponent } from './components/add-producto/add-producto.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { NewEditProductoComponent } from './components/new-edit-producto/new-edi
     TiendaComponent,
     SignupComponent,
     StoreComponent,
-    NewEditProductoComponent
+    ListaProductoComponent,
+    NavMecanicoComponent,
+    NavClienteComponent,
+    OpcionUsuarioComponent,
+    EditProductoComponent,
+    AddProductoComponent
   ],
   imports: [
     BrowserModule,

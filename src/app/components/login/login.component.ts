@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
+import { Mecanico } from 'src/app/models/mecanico';
 import { ClienteService } from 'src/app/services/cliente/cliente.service';
+import { ComunicacionService } from 'src/app/services/comunicacion/comunicacion.service';
+import { MecanicoService } from 'src/app/services/mecanico/mecanico.service';
 
 
 @Component({
@@ -18,8 +21,12 @@ export class LoginComponent implements OnInit{
   clientes!:Cliente[];
   esValido!: boolean;
 
+  tipoUsuario!:string;
+
   constructor(private formBuilder:FormBuilder,
     private clienteService:ClienteService,
+    private mecanicoService:MecanicoService,
+    private comunicacionService:ComunicacionService,
     private router:Router){}
 
   ngOnInit(): void {
@@ -34,20 +41,40 @@ export class LoginComponent implements OnInit{
     })
   }
 
+
+
   verificarUsuario(): void {
+
     this.email = this.myform.get('email')?.value;
     this.password = this.myform.get('password')?.value;
-    this.clienteService.getCLientes().subscribe(
-      (data: Cliente[]) => {
-        let auxcliente= data.find(x => x.email == this.email && x.password == this.password);
-        if (auxcliente) {
-          this.router.navigate(["opciones"]);
+
+    if(this.comunicacionService.tipoUsuario=="cliente")
+    {
+      this.clienteService.getCLientes().subscribe(
+        (data: Cliente[]) => {
+          let auxcliente= data.find(x => x.email == this.email && x.password == this.password);
+          if (auxcliente) {
+            this.router.navigate(["opciones"]);
+          }
         }
-      }
-    );
+      );
+    }
+
+    if(this.comunicacionService.tipoUsuario=="mecanico")
+    {
+      this.mecanicoService.getMecanicos().subscribe(
+        (data: Mecanico[]) => {
+          let auxmecanico= data.find(x => x.email == this.email && x.password == this.password);
+          if (auxmecanico) {
+            this.router.navigate(["listaProducto"]);
+          }
+        }
+      );
+    }
+
     this.esValido = false;
   }
-
-
   hide = true;
+
+
 }

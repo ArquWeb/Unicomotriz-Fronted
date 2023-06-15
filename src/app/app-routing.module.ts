@@ -9,6 +9,10 @@ import { MantenimientoComponent } from './components/mantenimiento/mantenimiento
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StoreComponent } from './components/store/store.component';
+import { ListaProductoComponent } from './components/lista-producto/lista-producto.component';
+import { NavMecanicoComponent } from './components/nav-mecanico/nav-mecanico.component';
+import { OpcionUsuarioComponent } from './components/opcion-usuario/opcion-usuario.component';
+import { AddProductoComponent } from './components/add-producto/add-producto.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -19,6 +23,10 @@ const routes: Routes = [
   { path: 'tienda', component: TiendaComponent },
   { path: 'signup', component: SignupComponent},
   { path: 'store', component: StoreComponent},
+  { path: 'listaProducto', component: ListaProductoComponent},
+  { path: 'navMecanico', component: NavMecanicoComponent},
+  { path: 'opcion-usuario', component: OpcionUsuarioComponent},
+  { path: 'addProducto', component: AddProductoComponent},
 ];
 
 @NgModule({

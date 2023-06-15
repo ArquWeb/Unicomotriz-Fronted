@@ -72,25 +72,18 @@
   ],
   "productos": [
     {
-      "id": 1,
-      "nombre": "Foco Halogeno",
-      "descripcion": "TK-7421-C",
-      "precio": 35,
-      "imagen": "../../../assets/images/foco-halogeno.png"
-    },
-    {
       "id": 2,
       "nombre": "Foco Halogeno",
       "descripcion": "TK-7421-C",
       "precio": 35,
-      "imagen": "../../../assets/images/foco-halogeno.png"
+      "imagen": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
     },
     {
       "id": 3,
       "nombre": "Foco Halogeno",
       "descripcion": "TK-7421-C",
       "precio": 35,
-      "imagen": "../../../assets/images/foco-halogeno.png"
+      "imagen": "data:image/jpeg;base64,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"
     },
     {
       "id": 4,
@@ -105,6 +98,34 @@
       "descripcion": "TK-7421-C",
       "precio": 35,
       "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 7,
+      "nombre": "Foco Halogeno",
+      "descripcion": "TK-7421-C",
+      "precio": 35,
+      "imagen": "../../../assets/images/foco-halogeno.png"
+    },
+    {
+      "id": 50,
+      "nombre": "neumatico",
+      "descripcion": "marca toyota",
+      "precio": "45",
+      "imagen": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
+    },
+    {
+      "id": 51,
+      "nombre": "neu",
+      "descripcion": "sdg",
+      "precio": "67",
+      "imagen": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fe00-elmundo.uecdn.es%2Fassets%2Fmultimedia%2Fimagenes%2F2023%2F01%2F10%2F16733650478358.jpg&tbnid=8x85Q13plS0DmM&vet=12ahUKEwjakcHXsMb_AhUQlJUCHdUwAUMQMygBegUIARDiAQ..i&imgrefurl=https%3A%2F%2Fwww.elmundo.es%2Fcomo%2F2023%2F01%2F10%2F63bd5a13e4d4d82a3d8b45b1.html&docid=urZZdYy2Vio4XM&w=1920&h=1280&q=neumaticos&ved=2ahUKEwjakcHXsMb_AhUQlJUCHdUwAUMQMygBegUIARDiAQ"
     }
   ]
 }

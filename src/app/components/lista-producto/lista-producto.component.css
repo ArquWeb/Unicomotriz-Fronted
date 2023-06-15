@@ -1,0 +1,45 @@
+h2{
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+
+table {
+  width: 100%;
+
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+
+}
+
+.mat-form-field{
+  width: 100%;
+  font-size: 20px;
+}
+
+button{
+  background-color: red;
+  color:white;
+}
+th{
+  font-size: 15px;
+  color: black;
+}
+
+td{
+  height: 80px;
+}
+
+img{
+  width: 50%;
+  height: 50%;
+  position: relative;
+  display: block;
+
+
+}
