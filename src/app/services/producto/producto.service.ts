@@ -20,6 +20,10 @@ export class ProductoService {
     return this.http.delete<Producto>(`${'http://localhost:3000/productos'}/${id}`);
   }
   addProducto(producto:Producto){
-    return this.http.post<Producto>('http://localhost:3000/productos', producto)
+    return this.http.post<Producto>('http://localhost:3000/productos', producto);
   }
+  updateProducto(id:any, producto:Producto){
+    return this.http.put<Producto>(`${'http://localhost:3000/productos'}/${id}`, producto);
+  }
+
 }

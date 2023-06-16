@@ -1,82 +1,57 @@
-.presentation {
-  display: flex;
-  align-items: center;
-  padding: 16px 75px;
-}
-
-.presentation h1 {
-  flex: 1;
+.title{
+  font-size: 60px;
+  margin-top: 30px;
   text-align: center;
 }
 
-.presentation img {
-  max-width: 150px;
-  aspect-ratio: 1;
-}
-
-h1 {
-  font-size: 80px;
+h1{
+  font-size: 20px;
   font-weight: bold;
 }
 
-mat-card::ng-deep.mat-card-header-text {
-  width: 50%;
+.informacion{
+  margin: 100px 100px;
+
 }
 
-mat-card {
-  width: 12%;
-  border-radius: 10px;
-  margin: auto;
-  background-color: #00ffd1;
-  align-items: center;
-  text-align: center;
-}
-
-.opciones {
+.casillas{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 200px;
+  flex-wrap: wrap;
 }
 
-.opciones-item {
-  min-width: 290px;
-  min-height: 300px;
-  background: #00ffd1;
-  border-radius: 25px;
-  position: relative;
-  text-align: center;
+.item{
+  margin: 20px 20px;
 }
 
-.item-img-container {
-  max-width: 160px;
-  max-height: 155px;
-  background: #97ffec;
+
+.vehiculo{
+  margin: 100px 100px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.casillas-left{
   display: flex;
-  padding: 30px;
-  border-radius: 50%;
-  transform: translateY(-62px);
-  margin: auto;
+  flex-wrap: wrap;
+
 }
 
-.item-img-container img {
-  object-fit: contain;
-  width: 100%;
+p{
+  font-size: 20px;
+  color: gray;
 }
 
-.opciones-item h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 47px;
+input{
+  border-radius: 5px;
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  border-width: 1px;
+  border-color:darkcyan;
 
-  color: #000000;
 }
 
-.card-image {
-  width: 600px;
-  height: 200px;
-  align-items: center;
-  margin-right: 17px;
-}
+
+
+
+

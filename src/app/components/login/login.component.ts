@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit{
         (data: Cliente[]) => {
           let auxcliente= data.find(x => x.email == this.email && x.password == this.password);
           if (auxcliente) {
-            this.router.navigate(["opciones"]);
+            this.router.navigate(["mantenimiento"]);
           }
         }
       );

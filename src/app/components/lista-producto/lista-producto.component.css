@@ -5,6 +5,11 @@ h2{
 
 }
 
+.boton-add {
+  margin-left: 95%;
+  margin-bottom: 20px;
+  background-color: red;
+}
 
 table {
   width: 100%;

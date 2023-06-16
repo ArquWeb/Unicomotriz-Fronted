@@ -13,6 +13,7 @@ import { ListaProductoComponent } from './components/lista-producto/lista-produc
 import { NavMecanicoComponent } from './components/nav-mecanico/nav-mecanico.component';
 import { OpcionUsuarioComponent } from './components/opcion-usuario/opcion-usuario.component';
 import { AddProductoComponent } from './components/add-producto/add-producto.component';
+import { EditProductoComponent } from './components/edit-producto/edit-producto.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'navMecanico', component: NavMecanicoComponent},
   { path: 'opcion-usuario', component: OpcionUsuarioComponent},
   { path: 'addProducto', component: AddProductoComponent},
+  { path: 'producto/:id', component: EditProductoComponent},
 ];
 
 @NgModule({

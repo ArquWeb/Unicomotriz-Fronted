@@ -1,21 +1,65 @@
 <app-nav-cliente></app-nav-cliente>
-<div class="presentation">
-  <h1>Mantenimiento</h1>
-  <img src="../../../assets/images/user-default.png" alt="username" />
+
+  <h1 class="title">Mantenimiento</h1>
+
+<div class="informacion">
+  <h1>Mi información</h1>
+  <div class="casillas">
+    <div class="item">
+      <p>NOMBRE</p>
+      <input [disabled]="true">
+    </div>
+    <div class="item">
+      <p>APELLIDO</p>
+      <input [disabled]="true">
+    </div>
+    <div class="item">
+      <p>EMAIL</p>
+      <input [disabled]="true">
+    </div>
+    <div class="item">
+      <p>DIRECCIÓN</p>
+      <input [disabled]="true">
+    </div>
+    <div class="item">
+      <p>CIUDAD</p>
+      <input [disabled]="true">
+    </div>
+  </div>
 </div>
 
-<div class="opciones" routerLink="/mapa">
-  <div class="opciones-item">
-    <div class="item-img-container">
-      <img src="../../../assets/images/mapa.png" alt="mapa" />
+<div class="vehiculo">
+  <div class="left">
+    <h1>Mi Vehìculo</h1>
+    <div class="casillas-left">
+      <div class="item">
+        <p>MARCA</p>
+        <input [disabled]="true">
+      </div>
+      <div class="item">
+        <p>MODELO</p>
+        <input [disabled]="true">
+      </div>
+      <div class="item">
+        <p>PLACA</p>
+        <input [disabled]="true">
+      </div>
+      <div class="item">
+        <p>SOAT</p>
+        <input [disabled]="true">
+      </div>
+      <div class="item">
+        <p>RENOVACIÓN</p>
+        <input [disabled]="true">
+      </div>
+      <div class="item">
+        <p>REVISIÓN TECNICA</p>
+        <input [disabled]="true">
+      </div>
+      <div class="item">
+        <p>RENOVACIÓN</p>
+        <input [disabled]="true">
+      </div>
     </div>
-    <h2>Mapa</h2>
-  </div>
-
-  <div class="opciones-item" routerLink="/store">
-    <div class="item-img-container">
-      <img src="../../../assets/images/tienda.png" alt="tienda" />
-    </div>
-    <h2>Tienda</h2>
   </div>
 </div>
