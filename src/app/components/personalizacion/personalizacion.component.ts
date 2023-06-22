@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ComunicacionService } from 'src/app/services/comunicacion/comunicacion.service';
 
 @Component({
   selector: 'app-personalizacion',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./personalizacion.component.css']
 })
 export class PersonalizacionComponent {
+  constructor(private comunicacionService:ComunicacionService){}
 
+  idCliente:any=this.comunicacionService.id;
 }

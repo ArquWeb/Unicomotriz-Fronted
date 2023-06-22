@@ -23,5 +23,8 @@ export class ClienteService {
   addCliente(cliente:Cliente){
     return this.http.post<Cliente>('http://localhost:3000/clientes', cliente)
   }
+  updateCliente(id:any, cliente:Cliente){
+    return this.http.put<Cliente>(`${'http://localhost:3000/clientes'}/${id}`, cliente);
+  }
 
 }

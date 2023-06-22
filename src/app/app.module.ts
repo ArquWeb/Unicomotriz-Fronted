@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,9 @@ import { NavClienteComponent } from './components/nav-cliente/nav-cliente.compon
 import { OpcionUsuarioComponent } from './components/opcion-usuario/opcion-usuario.component';
 import { EditProductoComponent } from './components/edit-producto/edit-producto.component';
 import { AddProductoComponent } from './components/add-producto/add-producto.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+
+
 
 @NgModule({
   declarations: [
@@ -40,7 +44,8 @@ import { AddProductoComponent } from './components/add-producto/add-producto.com
     NavClienteComponent,
     OpcionUsuarioComponent,
     EditProductoComponent,
-    AddProductoComponent
+    AddProductoComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
@@ -50,8 +55,10 @@ import { AddProductoComponent } from './components/add-producto/add-producto.com
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

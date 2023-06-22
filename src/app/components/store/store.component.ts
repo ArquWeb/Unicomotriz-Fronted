@@ -9,7 +9,6 @@ import { ProductoService } from 'src/app/services/producto/producto.service';
 })
 export class StoreComponent implements OnInit{
   productos:Producto[] =this.getProductos();
-
   constructor(private productoService:ProductoService){}
 
   ngOnInit(): void {
@@ -20,6 +19,7 @@ export class StoreComponent implements OnInit{
     this.productoService.getProductos().subscribe(
       (data:Producto[])=>{
         this.productos=data;
+
       }
     )
     return this.productos;

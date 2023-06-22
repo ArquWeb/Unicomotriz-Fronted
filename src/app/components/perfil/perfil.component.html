@@ -1,0 +1,122 @@
+<app-nav-cliente></app-nav-cliente>
+
+<button mat-raised-button id="btn-logout"
+      class="font-lighter w-50" routerLink="/opcion-usuario">
+      Cerrar Sesión</button>
+
+<form [formGroup]="myForm" class="form">
+
+
+  <mat-form-field >
+    <mat-label ></mat-label>
+    <input matInput formControlName="descripcion"  [disabled]="true" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Nombre</mat-label>
+    <input matInput formControlName="nombre" placeholder="Nombre" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('nombre')?.hasError('required') && myForm.get('nombre')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Apellido</mat-label>
+    <input matInput formControlName="apellido" placeholder="Apellido" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('apellido')?.hasError('required') && myForm.get('apellido')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+
+  <mat-form-field appearance="standard" class="w-50 mb-0">
+    <mat-label class="font-lighter">Email</mat-label>
+    <input matInput formControlName="email" placeholder="Email" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('email')?.hasError('required') && myForm.get('email')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+  <div *ngIf="myForm.get('email')?.hasError('email') && myForm.get('email')?.touched">
+    <span class="text-danger"> Ingrese un email válido</span>
+  </div>
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Direccion</mat-label>
+    <input matInput formControlName="direccion" placeholder="Direccion" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('direccion')?.hasError('required') && myForm.get('direccion')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Ciudad</mat-label>
+    <input matInput formControlName="ciudad" placeholder="Ciudad" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('ciudad')?.hasError('required') && myForm.get('ciudad')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Marca</mat-label>
+    <input matInput formControlName="marca" placeholder="Marca" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Modelo de Vehiculo</mat-label>
+    <input matInput formControlName="modeloVehiculo" placeholder="Modelo de Vehiculo" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Placa</mat-label>
+    <input matInput formControlName="placa" placeholder="Placa" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Soat</mat-label>
+    <input matInput formControlName="soat" placeholder="Soat" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Revision Tecnica</mat-label>
+    <input matInput formControlName="revisionTecnica" placeholder="Revision Tecnica" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Password</mat-label>
+    <input matInput formControlName="password" placeholder="Password" type="password"/>
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('password')?.hasError('required') && myForm.get('password')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+  <div class="text-end w-50">
+    <button mat-raised-button id="btn-cancelar"
+      class="font-lighter w-50" routerLink="/mantenimiento/{{idCliente}}">
+      Cancelar</button>
+    <button mat-raised-button id="btn-ingresar" mat-raised-button [disabled]="myForm.invalid"
+      class="font-lighter w-50" (click)="update()">
+      Listo
+    </button>
+  </div>
+
+</form>

@@ -14,7 +14,7 @@ import { MecanicoService } from 'src/app/services/mecanico/mecanico.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
-
+  id!:any;
   myform!:FormGroup;
   email!: string;
   password!: string;
@@ -33,6 +33,8 @@ export class LoginComponent implements OnInit{
       this.loadMyForm();
       this.esValido = true;
   }
+
+
 
   loadMyForm(){
     this.myform=this.formBuilder.group({
@@ -53,8 +55,10 @@ export class LoginComponent implements OnInit{
       this.clienteService.getCLientes().subscribe(
         (data: Cliente[]) => {
           let auxcliente= data.find(x => x.email == this.email && x.password == this.password);
+          this.id=auxcliente?.id;
+          this.comunicacionService.id=this.id;
           if (auxcliente) {
-            this.router.navigate(["mantenimiento"]);
+            this.router.navigate(['mantenimiento/'+this.id]);
           }
         }
       );
@@ -65,8 +69,10 @@ export class LoginComponent implements OnInit{
       this.mecanicoService.getMecanicos().subscribe(
         (data: Mecanico[]) => {
           let auxmecanico= data.find(x => x.email == this.email && x.password == this.password);
+          this.id=auxmecanico?.id;
+          this.comunicacionService.id=this.id;
           if (auxmecanico) {
-            this.router.navigate(["listaProducto"]);
+            this.router.navigate(["listaProducto/"+this.id]);
           }
         }
       );

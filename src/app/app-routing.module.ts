@@ -14,21 +14,23 @@ import { NavMecanicoComponent } from './components/nav-mecanico/nav-mecanico.com
 import { OpcionUsuarioComponent } from './components/opcion-usuario/opcion-usuario.component';
 import { AddProductoComponent } from './components/add-producto/add-producto.component';
 import { EditProductoComponent } from './components/edit-producto/edit-producto.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'opciones', component: OpcionesComponent },
-  { path: 'personalizacion', component: PersonalizacionComponent },
-  { path: 'mantenimiento', component: MantenimientoComponent },
-  { path: 'tienda', component: TiendaComponent },
+  { path: 'personalizacion/:id', component: PersonalizacionComponent },
+  { path: 'mantenimiento/:id', component: MantenimientoComponent },
+  { path: 'tienda/:id', component: TiendaComponent },
   { path: 'signup', component: SignupComponent},
-  { path: 'store', component: StoreComponent},
-  { path: 'listaProducto', component: ListaProductoComponent},
+  { path: 'store/:id', component: StoreComponent},
+  { path: 'listaProducto/:id', component: ListaProductoComponent},
   { path: 'navMecanico', component: NavMecanicoComponent},
   { path: 'opcion-usuario', component: OpcionUsuarioComponent},
   { path: 'addProducto', component: AddProductoComponent},
   { path: 'producto/:id', component: EditProductoComponent},
+  { path: 'perfil/:id', component: PerfilComponent},
 ];
 
 @NgModule({
