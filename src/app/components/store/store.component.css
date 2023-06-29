@@ -13,6 +13,8 @@
 
 .presentation img {
   max-width: 150px;
+  height: 80px;
+  width: 80px;
   aspect-ratio: 1;
 }
 
@@ -73,8 +75,9 @@ mat-card {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   color: #000000;
+  margin-top: -60px;
 }
 
 .card-image {
@@ -106,4 +109,9 @@ mat-card {
 
 .item{
   margin: 50px 50px;
+}
+
+button{
+  background-color: white;
+  height: 30px;
 }

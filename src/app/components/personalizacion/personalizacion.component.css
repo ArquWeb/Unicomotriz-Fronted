@@ -42,7 +42,9 @@ mat-card {
 .opciones-item {
   min-width: 290px;
   min-height: 300px;
-  background: #d9d9d9;
+  max-width: 290px;
+  max-height: 300px;
+  background: #00ffd1;
   border-radius: 25px;
   position: relative;
   text-align: center;

@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit{
           this.id=auxmecanico?.id;
           this.comunicacionService.id=this.id;
           if (auxmecanico) {
-            this.router.navigate(["listaProducto/"+this.id]);
+            this.router.navigate(["listaProducto"]);
           }
         }
       );

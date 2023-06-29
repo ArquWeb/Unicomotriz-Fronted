@@ -24,6 +24,8 @@ import { OpcionUsuarioComponent } from './components/opcion-usuario/opcion-usuar
 import { EditProductoComponent } from './components/edit-producto/edit-producto.component';
 import { AddProductoComponent } from './components/add-producto/add-producto.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { CarroComprasComponent } from './components/carro-compras/carro-compras.component';
+import { PerfilMecanicoComponent } from './components/perfil-mecanico/perfil-mecanico.component';
 
 
 
@@ -45,7 +47,9 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     OpcionUsuarioComponent,
     EditProductoComponent,
     AddProductoComponent,
-    PerfilComponent
+    PerfilComponent,
+    CarroComprasComponent,
+    PerfilMecanicoComponent
   ],
   imports: [
     BrowserModule,

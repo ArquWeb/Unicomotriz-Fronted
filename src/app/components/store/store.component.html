@@ -1,20 +1,23 @@
 <app-nav-cliente></app-nav-cliente>
 <div class="presentation">
   <h1>Tienda</h1>
-  <img src="../../../assets/images/user-default.png" alt="username" />
+  <a routerLink="/carro-compras/{{idCliente}}">
+    <img class="carro-compras" src="../../../assets/images/carro2.png" alt="username" />
+  </a>
+
 </div>
 
 
-
 <div class="lista">
-
-
-  <div *ngFor="let item of productos; let i=index" class="item">
+  <div *ngFor="let item of productos$ | async; let i = index" class="item">
     <div class="opciones-item">
       <div class="item-img-container">
         <img src="{{item.imagen}}" alt="foco-halogeno" />
       </div>
       <h2>{{item.nombre}}</h2>
+      <p>{{ item.descripcion }}</p>
+      <p style="color: red; font-size: 22px;">{{ item.precio }} soles</p>
+      <button mat-button (click)="addCarroCompra(item.id)"> agregar</button>
     </div>
   </div>
 </div>

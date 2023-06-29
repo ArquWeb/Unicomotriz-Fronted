@@ -7,5 +7,5 @@ export interface Mecanico{
   password:string;
   direccionTaller:string;
   email:string;
-  productos: Producto[];
+
 }

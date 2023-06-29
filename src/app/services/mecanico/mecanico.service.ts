@@ -22,4 +22,7 @@ export class MecanicoService {
   addMecanico(mecanico:Mecanico){
     return this.http.post<Mecanico>('http://localhost:3000/mecanicos', mecanico)
   }
+  updateMecanico(id:any, mecanico:Mecanico){
+    return this.http.put<Mecanico>(`${'http://localhost:3000/mecanicos'}/${id}`, mecanico);
+  }
 }

@@ -1,0 +1,82 @@
+<app-nav-mecanico></app-nav-mecanico>
+
+<button mat-raised-button id="btn-logout"
+      class="font-lighter w-50" routerLink="/opcion-usuario">
+      Cerrar Sesión</button>
+
+<form [formGroup]="myForm" class="form">
+
+
+  <mat-form-field >
+    <mat-label ></mat-label>
+    <input matInput formControlName="descripcion"  [disabled]="true" />
+  </mat-form-field>
+  <br />
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Nombre</mat-label>
+    <input matInput formControlName="nombre" placeholder="Nombre" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('nombre')?.hasError('required') && myForm.get('nombre')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Usuario</mat-label>
+    <input matInput formControlName="usuario" placeholder="Usuario" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('usuario')?.hasError('required') && myForm.get('usuario')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Password</mat-label>
+    <input matInput formControlName="password" placeholder="Password" type="password"/>
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('password')?.hasError('required') && myForm.get('password')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+  <mat-form-field appearance="standard" class="w-50 mb-4">
+    <mat-label class="font-lighter">Dirección Taller</mat-label>
+    <input matInput formControlName="direccionTaller" placeholder="direccionTaller"/>
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('direccionTaller')?.hasError('required') && myForm.get('direccionTaller')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+
+  <mat-form-field appearance="standard" class="w-50 mb-0">
+    <mat-label class="font-lighter">Email</mat-label>
+    <input matInput formControlName="email" placeholder="Email" />
+  </mat-form-field>
+  <br />
+
+  <div *ngIf="(myForm.get('email')?.hasError('required') && myForm.get('email')?.touched)">
+    <span class="text-danger">*Campo obligatorio</span>
+  </div>
+  <div *ngIf="myForm.get('email')?.hasError('email') && myForm.get('email')?.touched">
+    <span class="text-danger"> Ingrese un email válido</span>
+  </div>
+
+
+
+  <div class="text-end w-50">
+    <button mat-raised-button id="btn-cancelar"
+      class="font-lighter w-50" routerLink="/listaProducto">
+      Cancelar</button>
+    <button mat-raised-button id="btn-ingresar" mat-raised-button [disabled]="myForm.invalid"
+      class="font-lighter w-50" (click)="update()">
+      Listo
+    </button>
+  </div>
+
+</form>

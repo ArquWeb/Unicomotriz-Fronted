@@ -2,7 +2,7 @@
   "clientes": [
     {
       "id": 1,
-      "nombre": "jorge luis",
+      "nombre": "juan perez aa",
       "apellido": "juan de dios apaza",
       "email": "jorge@gmail.com",
       "direccion": "ate",
@@ -13,8 +13,8 @@
         "marca": "Toyota",
         "modeloVehiculo": "toyota",
         "placa": "123-ABC",
-        "soat": "06/10/2023",
-        "revisionTecnica": "10/06/2023"
+        "soat": "06-10-2023",
+        "revisionTecnica": "06/10/2023"
       }
     },
     {
@@ -55,10 +55,10 @@
   "mecanicos": [
     {
       "id": 1,
-      "nombre": "juan",
-      "usuario": "juan",
+      "nombre": "juan qaabcd",
+      "usuario": "juan aaa",
       "password": "12345",
-      "direccion": "calle 3",
+      "direccionTaller": "calle 33",
       "email": "juan@gmail.com"
     },
     {
@@ -74,7 +74,7 @@
     {
       "id": 2,
       "nombre": "Foco Halogeno",
-      "descripcion": "TK-7421-C",
+      "descripcion": "TK-7421-CA",
       "precio": 35,
       "imagen": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
     },
@@ -112,6 +112,28 @@
       "descripcion": "marca toyota",
       "precio": "45",
       "imagen": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
+    },
+    {
+      "id": 51,
+      "nombre": "ne",
+      "descripcion": "sdfs",
+      "precio": "23",
+      "imagen": "https://i.ibb.co/MC5TRyd/download.jpg"
+    }
+  ],
+  "carroCompras": [
+    {
+      "id":1,
+      "montoTotal":0,
+      "productos":[
+        {
+          "id": 2,
+          "nombre": "Foco Halogeno",
+          "descripcion": "TK-7421-CA",
+          "precio": 35,
+          "imagen": "https://i.postimg.cc/GpMdb6RN/bodeguero.png"
+        }
+      ]
     }
   ]
 }

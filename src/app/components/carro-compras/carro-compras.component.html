@@ -1,0 +1,19 @@
+<app-nav-cliente></app-nav-cliente>
+
+<div class="presentation">
+  <h1>Carro de Compras</h1>
+</div>
+
+
+<div class="lista">
+  <div *ngFor="let item of productos; let i = index" class="item">
+    <div class="opciones-item">
+      <div class="item-img-container">
+        <img src="{{item.imagen}}"/>
+      </div>
+      <h2>{{item.nombre}}</h2>
+      <p>{{ item.descripcion }}</p>
+      <p style="color: red; font-size: 22px;">{{ item.precio }} soles</p>
+    </div>
+  </div>
+</div>
